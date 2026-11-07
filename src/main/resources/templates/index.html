@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NextGen Solutions - Modern digital experiences built with Spring Boot and standard web technologies.">
+  <title>NextGen Solutions | Landing Page & Contact</title>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" th:href="@{/css/style.css}" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#home" class="brand-logo" aria-label="NextGen Homepage">
+          <span class="logo-badge">N</span>
+          <span>Next<span class="logo-accent">Gen</span></span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span>✨</span> Next-Generation Web Engineering
+          </div>
+          <h1 class="hero-title">
+            Build Faster, Smarter &amp; Scale with <span class="gradient-text">Precision</span>
+          </h1>
+          <p class="hero-subtitle">
+            We engineer high-performance web applications using robust Spring Boot micro-architectures and elegant user interfaces designed to captivate your audience.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#features" class="btn btn-outline">Explore Features</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Key Highlights</span>
+          <h2 class="section-title">Engineered For Modern Demands</h2>
+          <p class="section-description">
+            Discover the core advantages powering our software engineering standard.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">⚡</div>
+            <h3 class="feature-title">Lightning Performance</h3>
+            <p class="feature-text">
+              Blazing fast response times powered by Java 17 and Spring Boot's lightweight, non-blocking foundations.
+            </p>
+          </article>
+
+          <!-- Feature Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">🛡️</div>
+            <h3 class="feature-title">Robust Security</h3>
+            <p class="feature-text">
+              Enterprise-grade data validation, automated input sanitation, and built-in protection against common vulnerabilities.
+            </p>
+          </article>
+
+          <!-- Feature Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">📱</div>
+            <h3 class="feature-title">Responsive Design</h3>
+            <p class="feature-text">
+              Clean, mobile-first responsive interfaces crafted with fluid CSS Flexbox and Grid layouts for seamless cross-device usage.
+            </p>
+          </article>
+
+          <!-- Feature Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">🚀</div>
+            <h3 class="feature-title">Scalable Architecture</h3>
+            <p class="feature-text">
+              Modular and maintainable backend structure configured for smooth cloud deployments and rapid continuous iteration.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">Committed to Engineering Excellence</h2>
+        </div>
+
+        <div class="about-content">
+          <p class="about-paragraph">
+            NextGen Solutions bridges design thinking with backend precision. Our cross-functional teams bring together modern frontend aesthetics with clean, validated enterprise Java services to deliver reliable digital products that drive measurable impact.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">120+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Satisfied Clients</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years of Innovation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let’s Start a Conversation</h2>
+          <p class="section-description">
+            Have a project in mind or want to collaborate? Fill in the details below and we will get back to you promptly.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <!-- Flash Success Alert -->
+          <div th:if="${successMessage}" class="alert alert-success" role="alert">
+            <span class="alert-icon">✓</span>
+            <div>
+              <strong th:text="${successMessage}">Form submitted successfully!</strong>
+            </div>
+          </div>
+
+          <!-- General Error Alert -->
+          <div th:if="${errorMessage}" class="alert alert-error" role="alert">
+            <span class="alert-icon">⚠</span>
+            <div>
+              <strong th:text="${errorMessage}">Please correct the errors in the form below.</strong>
+            </div>
+          </div>
+
+          <!-- Contact Form with exact action="/contact" method="post" -->
+          <form action="/contact" method="post" class="contact-form" novalidate>
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="name" class="form-label">
+                <span>Your Name <span class="required-indicator">*</span></span>
+              </label>
+              <input type="text"
+                     id="name"
+                     name="name"
+                     th:value="${contactForm != null ? contactForm.name : ''}"
+                     class="form-input"
+                     th:classappend="${nameError != null} ? 'is-invalid' : ''"
+                     placeholder="John Doe"
+                     required
+                     maxlength="100">
+              <div th:if="${nameError}" class="field-error" th:text="${nameError}">
+                Name error
+              </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <label for="email" class="form-label">
+                <span>Email Address <span class="required-indicator">*</span></span>
+              </label>
+              <input type="email"
+                     id="email"
+                     name="email"
+                     th:value="${contactForm != null ? contactForm.email : ''}"
+                     class="form-input"
+                     th:classappend="${emailError != null} ? 'is-invalid' : ''"
+                     placeholder="john@example.com"
+                     required
+                     maxlength="100">
+              <div th:if="${emailError}" class="field-error" th:text="${emailError}">
+                Email error
+              </div>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <label for="message" class="form-label">
+                <span>Your Message <span class="required-indicator">*</span></span>
+                <span class="char-counter" id="charCounter">0 / 1000</span>
+              </label>
+              <textarea id="message"
+                        name="message"
+                        rows="5"
+                        th:text="${contactForm != null ? contactForm.message : ''}"
+                        class="form-textarea"
+                        th:classappend="${messageError != null} ? 'is-invalid' : ''"
+                        placeholder="Write your message here (up to 1000 characters)..."
+                        required
+                        maxlength="1000"></textarea>
+              <div th:if="${messageError}" class="field-error" th:text="${messageError}">
+                Message error
+              </div>
+            </div>
+
+            <!-- Submit Button labeled Send -->
+            <button type="submit" class="btn btn-primary submit-btn">
+              <span>Send</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-badge">N</span>
+            <span>Next<span class="logo-accent">Gen</span></span>
+          </div>
+          <p class="footer-desc">
+            Empowering organizations with high-velocity web solutions and resilient Java enterprise backends.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NextGen Solutions. All rights reserved. Built with Spring Boot &amp; Vanilla Web.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal Vanilla JS Enhancements -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Navigation Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', !isExpanded);
+          navLinks.classList.toggle('is-open');
+        });
+
+        // Close mobile menu when clicking nav link
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('is-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // Live Character Counter for Message Textarea
+      const messageTextarea = document.getElementById('message');
+      const charCounter = document.getElementById('charCounter');
+
+      if (messageTextarea && charCounter) {
+        const updateCounter = () => {
+          const currentLength = messageTextarea.value.length;
+          charCounter.textContent = `${currentLength} / 1000`;
+          if (currentLength > 900) {
+            charCounter.style.color = '#ef4444';
+          } else {
+            charCounter.style.color = 'var(--text-muted)';
+          }
+        };
+
+        messageTextarea.addEventListener('input', updateCounter);
+        updateCounter(); // Initial check if fields were pre-filled on validation error
+      }
+    });
+  </script>
+</body>
+</html>
